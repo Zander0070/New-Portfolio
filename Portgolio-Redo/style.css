@@ -16,6 +16,9 @@ html, body {
 #header-bar {
   width: 100%;
   display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 1;
   justify-content: center;
   background-color: #f5f5f5;
   border-bottom: 2px solid #ccc;
@@ -32,6 +35,11 @@ html, body {
   list-style: none;
   font-size: 18px;
   padding: 0;
+  transition: 1s ease-out;
+}
+
+#nav-list li{
+    transition: 1s ease-out;
 }
 
 #nav-list li:hover{
@@ -40,6 +48,7 @@ html, body {
     cursor: pointer;
     transform: scale(1.15);
     color: turquoise;
+    text-decoration: underline;
     
 }
 
@@ -146,12 +155,14 @@ html, body {
 .skills h4 {
   font-size: 1.1rem;
   margin-bottom: 0.5rem;
+  transition: 1s ease-out;
 }
 
 .skills-Container{
      background: #eef1f5;
      padding: 6%;
      border-radius: 20px;
+     transition: 1s ease-out;
 }
 
 .skills-Container:hover{
@@ -189,6 +200,7 @@ html, body {
     transform: scale(1.15);
     transition: 1s;
     box-shadow: 0px 0px 70px rgb(108, 252, 252);
+    
 }
 
 .Feature-Container:hover h4{
@@ -205,7 +217,7 @@ html, body {
 }
 
 .Item{
-    border: 1px solid rgb(164, 248, 164);
+    border: 1px solid rgb(0, 0, 0);
     padding: 4px;
     border-radius: 10px;
     background-color: #eef1f5 ;
@@ -221,7 +233,7 @@ html, body {
 
 #Github{
     width: 10%; margin-right: 10%; border-radius: 20px;
-   
+   transition: 1s ease-out;
 }
 
 #Github:hover{
@@ -232,7 +244,7 @@ html, body {
 #Linkedin{
     width: 10%;
     border-radius: 20px;
-    
+    transition: 1s ease-out;
 }
 
 #Linkedin:hover{
@@ -245,11 +257,12 @@ html, body {
     width: 50%;
     border-radius: 20px;
     border: none;
+    transition: 1s ease-out;
 }
 
 #ViewCodeBtn:hover{
-    background-color: rgb(164, 248, 164);
-    box-shadow: 0px 0px 30px rgb(159, 241, 159);
+    background-color: rgb(121, 246, 255);
+    box-shadow: 0px 0px 30px rgb(129, 247, 255);
     transition: 0.5s;
 }
 
@@ -300,7 +313,7 @@ html, body {
     border-radius: 25px;
     background-color: rgb(238, 241, 246);
     box-shadow: 0px 0px 20px turquoise;
-
+    transition: 1s ease-out;
 }
 
 #Skill-Sub-Container:hover{
@@ -314,6 +327,30 @@ html, body {
     flex-direction: row;
     gap: 100px;
 }
+
+#All-Project-Container{
+    justify-content: center;
+    padding: 1rem;
+}
+
+#Projects-GH{
+    padding: 1rem;
+    border-radius: 20px;
+    width: 20%;
+    border: none;
+    color: turquoise;
+    border: 1px solid turquoise;
+    transition: 1s ease-out;
+}
+
+#Projects-GH:hover{
+    color: mediumorchid;
+    border: 1px solid mediumorchid;
+    transform: scale(1.15);
+    box-shadow: 0px 0px 10px mediumorchid;
+    transition: 1s;
+}
+
 
 
 @media (max-width: 768px) {
