@@ -13,21 +13,21 @@
   <header id="header-bar">
     <nav id="nav-bar">
       <ul id="nav-list">
-        <li onclick="location.href='#hero-content'">Home</li>
-        <li onclick="location.href='#about'">About</li>
-        <li onclick="location.href='#Skillss'">Skills</li>
-        <li onclick="location.href='#Projects'">Projects</li>
-        <li >Contact</li>
+        <li onclick="document.body.scrollIntoView({top:1, behavior: 'smooth'})">Home</li>
+        <li onclick="window.scrollTo({top:document.getElementById('about').offsetTop, behavior: 'smooth'})">About</li>
+        <li onclick="window.scrollTo({top:document.getElementById('Skillss').offsetTop, behavior: 'smooth'})">Skills</li>
+        <li onclick="window.scrollTo({top:document.getElementById('Projects').offsetTop, behavior: 'smooth'})">Projects</li>
+       
       </ul>
     </nav>
   </header>
 
   
-  <section id="hero">
+  <section id="hero" class="fade-in-section">
     <div id="hero-content">
       <div id="hero-text">
         <h1><span id="Zander">Zander</span> Wepener</h1>
-        <p class="subtitle">Aspiring Software Developer</p>
+        <p class="subtitle">Aspiring <span style="color: turquoise;">Software</span> Developer</p>
         <p>
           I craft digital experiences with modern technologies, building scalable applications from concept to deployment.
           Passionate about clean code, user experience, and solving complex problems.
@@ -42,7 +42,7 @@
   </section>
 
   
-  <section id="about">
+  <section id="about" class="fade-in-section">
     <h2 id="Me">About <span style="color: turquoise;">Me</span></h2>
     <div id="about-content">
       <div id="about-image-container">
@@ -69,7 +69,7 @@
     </div>
   </section>
 
-  <section id="Skillss">
+  <section id="Skillss" class="fade-in-section">
     <h1 id="My-Skills">My <span style="color: turquoise;">Skills</span></h1>
     <p style="padding: 2%; font-size: 20px;">technologies and tools I work with to bring idaes to life</p>
     <div id="Skills-Containers">
@@ -130,7 +130,7 @@
   </section>
 
 
-  <section id="Projects">
+  <section id="Projects" class="fade-in-section">
     <h2 id="Feature-Text"><span style="color: rgb(161, 103, 255);">Featured</span> Projects</h2>
     <div id="Feature-Container">
         <div class="Feature-Container">
@@ -164,7 +164,7 @@
             <a href="https://github.com/Zander0070/HOW-LONG-MUST-WORK-UI-BACKEND/blob/main/How-Long-Must-I-Work/index.html"><button id="ViewCodeBtn" >View Code</button></a>
         </div>
     </div>
-    <div id="All-Project-Container">
+    <div id="All-Project-Container" class="fade-in-section">
         <a href="https://github.com/Zander0070?tab=repositories"><button id="Projects-GH">View all Github Projects</button></a>
     </div>
 
